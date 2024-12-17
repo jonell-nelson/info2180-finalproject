@@ -14,7 +14,7 @@
 </head>
 <body>
 <header id="head">
-    <img src="img/dolphin.png" alt="">
+    <img src="Dolphin.png" alt="">
     <p>Dolphin CRM</p>
 </header>
 <main class="main">

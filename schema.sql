@@ -1,7 +1,7 @@
 -- MySQL dump 10.11
 --
 -- to install this database, from a terminal, type:
--- mysql -u USERNAME -p password123 -h SERVERNAME dolphin_crm < schema.sql
+-- mysql -u USERNAME -p -h SERVERNAME dolphin_crm < schema.sql
 --
 -- Host: localhost    Database: dolphin_crm
 -- ------------------------------------------------------
@@ -43,7 +43,7 @@ CREATE TABLE `users`
 ) ENGINE = MyISAM AUTO_INCREMENT = 4080 DEFAULT CHARSET = utf8mb4;
 
 -- Admin user
-INSERT INTO `users` (firstname, lastname, password, email, role, created_at) VALUES ('Admin', 'User', 'password123', 'admin@project2.com', 'admin', NOW());
+INSERT INTO `users` (firstname, lastname, password, email, role, created_at) VALUES ('Admin', 'User', '$2a$12$92qTJ6zK.iAIiPNPJ/Oi6uxod3dh9nlJU9ttt9K7s.Ts3UjOmRuBa', 'admin@project2.com', 'admin', NOW());
 
 --
 -- Table structure for table `Contacts`
